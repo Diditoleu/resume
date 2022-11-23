@@ -8,7 +8,22 @@
 </head>
 <body>
     <style>
+    .flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
 
+    .flex-container > div {
+    background-color: #969f47;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
     body {
     background: #c7b39b url(images/bg.jpg); 
     color: rgb(8, 8, 8); 
@@ -60,6 +75,12 @@
 				transition: .15s ease-in-out;
     }
     </style>
+
+<div class="flex-container">
+    <div>RESUME</div> 
+</div>
+
+
     <img src="images/images2.jpg"width=150, height=150 alt="Person">
     
     
@@ -95,7 +116,9 @@
         <td 
         rowspan="2" 
     > 
-    <center><marquee behavior="scroll" direction="right"><h1>Өзім жайлы</h1></marquee></center>
+    <div class="flex-container">
+        <div>Өзім жайлы</div> 
+    </div>
     <h>Мен Төлеу Дидара Әл-Фараби атындағы қазақ ұлттық университетінің 4-курс студентімін. 
     <p>Мамандығым-Компьютерлік физика. Алға қойған нақты мақсаттарым бар. </p>
     <p>Және мамандығым бойынша программаны меңгеру үстіндемін.</p></h>
@@ -103,7 +126,9 @@
     </table>
 
 
-    <h1>ПРОГРАММАЛАР</h1>
+    <div class="flex-container">
+        <div>Программалар</div> 
+    </div>
     <table>
         <tr bgcolor="brown" >
         <td><img src="images/images5.jpg"width=250, height=150></td>
